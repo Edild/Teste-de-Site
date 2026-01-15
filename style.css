@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sensrif;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+h1{
+    margin: 20px;
+}
+
+/* GRID RESPONSIVO */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 100px;
+    padding: 20px;
+
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+/* EFEITO HOVER */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+}
+
+/* RESPONSIVO EXTRA */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+}
+
+.botão {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.quiz {
+    max-width: 500px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+
+}
+
+.opcoes {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+.opcao {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #eee;
+
+}
+
+.opcao.correta {
+    background: #4caf50;
+    color: white;
+}
+
+.opcao.errada {
+    background: #f44336;
+    color: white;
+}
