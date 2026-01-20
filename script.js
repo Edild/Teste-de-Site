@@ -42,9 +42,9 @@ if (document.getElementById("nome") && document.getElementById("senha")) {
         }
     }
 
-  /*  function logout() {
+    function logout() {
     localStorage.removeItem("logado");
     window.location.href = "index.html";
-}*/
+}
 
 }
