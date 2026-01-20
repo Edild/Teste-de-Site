@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site com cards</title>
+    <title>Home</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1> Meu site Interativo</h1>
+    <h1>Home</h1>
 
     <div class="cards">
-        <div class="cards" onclick="abrirPagina('pagina2.html')">
-            <img src="Ford.jpg">
-            <h3>Card 1</h3>
-            <p> Clique para abrir</p>
+        <div class="card" onclick="abrirPagina('pagina2.html')">
+            <img src="Foto16.jpeg " width="300">
+            <h3>The 3 Gents</h3>
+            <p>Bound by blood, friendship, and adventures.
+                Together, nothing can break us.
+            </p>
 
         </div>
         
         <div class="card" onclick="abrirPagina('pagina2.html')">
-            <img src="x-trail.jpg">
-            <h3>Card Animado</h3>
-            <p> Interação JS</p>
+            <img src="Foto15.jpeg">
+            <h3>Three roots</h3>
+            <p>Dos seus ensinamentos e amor surgem nossa força e nossos sonhos.</p>
         </div>
 
         <div class="card" onclick="abrirPagina('quiz.html')">
-        <img src="Range.jpg">
-        <h3>Quiz Interativo</h3>
-        <p>Lets test your brain</p>
-        
-
-           
+            <img src="Foto8.jpeg">
+            <h3>Our Journey</h3>
+            <p>Moments that become timeless memories</p>
         </div>
         
+    <script>
+         if (!localStorage.getItem("logado") !== "sim") {
+        window.location.href = "index.html";
+    }
+    </script>
+          
     </div>
 
     <!--Javascript-->

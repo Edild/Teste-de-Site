@@ -1,16 +1,75 @@
-* {
+*{
+    margin:0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial,sans-serif;
 }
 
 body{
     margin: 0;
-    font-family: Arial, sensrif;
+    font-family: Arial, sans-serif;
     background: #f2f2f2;
     text-align: center;
 }
 
 h1{
     margin: 20px;
+}
+
+.login-page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1e3c72;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #16325c;
+}
+
+.login-box a{
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #1e3c72;
+    font-size: 14px;
 }
 
 /* GRID RESPONSIVO */
@@ -28,7 +87,7 @@ h1{
     border-radius: 12px;
     padding: 15px;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform;
 
 }
 
@@ -47,22 +106,6 @@ h1{
     margin: 10px 0 5px;
 }
 
-/* RESPONSIVO EXTRA */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 22px;
-    }
-}
-
-.botão {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
 .quiz {
     max-width: 500px;
     margin: 30px auto;
@@ -70,13 +113,6 @@ h1{
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-
-}
-
-.opcoes {
-    display: grid;
-    gap: 10px;
-    margin-top: 20px;
 
 }
 
@@ -99,3 +135,50 @@ h1{
     background: #f44336;
     color: white;
 }
+
+/* RESPONSIVO EXTRA */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+       .botão {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+.opcoes {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+
+
+
