@@ -86,7 +86,7 @@ function carregarPergunta() {
 
     function mostrarResultado() {
         perguntaEl.textContent = "Quiz concluído 🎉";
-        document.querySelector(".opcoes").style.display = "none";
+        document.querySelector(".opcoes").style.visibility = "hidden";
         resultadoEl.innerHTML= `
         <h3>Sua pontuação:</h3>
         <p><strong>${pontuacao}</strong> de ${perguntas.length}</p>

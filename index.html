@@ -12,6 +12,13 @@
 
     <h1>Home</h1>
 
+     <script>
+         if (localStorage.getItem("logado") !== "true") {
+        window.location.href = "index.html";
+    }
+    </script>
+          
+
     <div class="cards">
         <div class="card" onclick="abrirPagina('pagina2.html')">
             <img src="Foto16.jpeg " width="300">
@@ -41,12 +48,7 @@
 
         </div>
         
-    <script>
-         if (localStorage.getItem("logado") !== "true") {
-        window.location.href = "index.html";
-    }
-    </script>
-          
+   
     </div>
 
     <!--Javascript-->

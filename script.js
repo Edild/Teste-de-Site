@@ -33,7 +33,7 @@ if (document.getElementById("nome") && document.getElementById("senha")) {
         const USER = "admin";
         const PASS = "Sucesso2018";
 
-        if (nome === USER && senha === PASS) {
+        if (nome === "admin" && senha === "Sucesso2018") {
             localStorage.setItem("logado", "true");
             alert("Login bem-sucedido!");
             window.location.href = "index.html";
@@ -42,9 +42,5 @@ if (document.getElementById("nome") && document.getElementById("senha")) {
         }
     }
 
-    function logout() {
-    localStorage.removeItem("logado");
-    window.location.href = "index.html";
-}
 
 }
